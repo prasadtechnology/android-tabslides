@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/custom_number_layout"
+    android:orientation="horizontal"
+    android:minHeight="50dp"
+    >
+
+    <ImageView
+        android:id="@+id/list_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/text_container"
+        >
+        <TextView
+            android:id="@+id/english_word_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:paddingLeft="16dp"
+            />
+        <TextView
+            android:id="@+id/telugu_word_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:textSize="20sp"
+            android:textAllCaps="true"
+            android:paddingLeft="16dp"
+            android:layout_below="@id/english_word_view"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_play_arrow"
+        android:background="@drawable/color_white"
+        />
+
+</LinearLayout>
